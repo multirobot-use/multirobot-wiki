@@ -1,6 +1,8 @@
 name: your_session_name
 root: ./
 
+# Note: this may not work at once because you try to launch a tmux session
+# inside a tmux session.
 windows:
   - launch_uavs:
       layout: even-horizontal
