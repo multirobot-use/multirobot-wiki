@@ -1,0 +1,21 @@
+name: your_session_name_gcs
+root: ./
+
+windows:
+  - multimaster:
+      layout: even-horizontal
+      panes:
+        - roscd your_ws/scripts; ./start_multimaster.sh
+  - your_project:
+      layout: even-horizontal
+      panes: 
+        - sleep 10; roslaunch your_ws your_project_gcs.launch
+  # - rtk_station:
+  #     layout: even-horizontal
+  #     panes: 
+  #       - sleep 12; roslaunch rtkbasestation rtkbase.launch
+  - cameras:
+      layout: even-horizontal
+      panes:
+        #- sleep 16; roslaunch your_ws camera_experiment.launch id:=2
+        - sleep 16; roslaunch your_ws camera_experiment.launch id:=3
