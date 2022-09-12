@@ -1,0 +1,1 @@
+To give the permissions to the Realsense camera to be read from the USB and, thus, to make this work on ROS once you launch the RealSense node, you have to copy the file *99-realsense-libusb.rules* on the folder */etc/udev/rules.d* and, then, unplug and plug the USB.
