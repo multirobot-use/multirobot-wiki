@@ -10,7 +10,7 @@ cd "$SCRIPTPATH"
 rm .tmuxinator.yml
 
 # link the session file to .tmuxinator.yml
-ln session_uav.yml .tmuxinator.yml
+ln session_uavs.yml .tmuxinator.yml
 
 # start tmuxinator
 tmuxinator
